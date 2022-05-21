@@ -1,0 +1,34 @@
+{
+  "name": "blog-v4-on-heroku",
+  "version": "4.47.4",
+  "description": "Deploy latest ghost v4 on Heroku",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelovekesh/ghost-v4-on-heroku.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "blog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nixsanctuary/heroku-buildpack/issues"
+  },
+  "homepage": "https://github.com/nixsanctuary/heroku-buildpack/#readme",
+  "engines": {
+    "node": "14.X"
+  },
+  "dependencies": {
+    "casper": "github:TryGhost/Casper#main",
+    "ghost": "^4.47.4",
+    "ghost-storage-adapter-s3": "^2.8.0",
+    "ghost-storage-cloudinary": "^2.2.1",
+    "lyra": "github:TryGhost/lyra#main",
+    "mysql": "^2.18.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "bash bin/cloudinary.sh && bash bin/aws-s3.sh && bash bin/themes.sh"
+  }
+}
