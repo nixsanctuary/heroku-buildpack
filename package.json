@@ -1,6 +1,6 @@
 {
-  "name": "blog-v4-on-heroku",
-  "version": "4.47.4",
+  "name": "blog-v5-on-heroku",
+  "version": "5.1.0",
   "description": "Deploy latest ghost v4 on Heroku",
   "main": "index.js",
   "repository": {
@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/nixsanctuary/heroku-buildpack/#readme",
   "engines": {
-    "node": "14.X"
+    "node": "16.X"
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
-    "ghost": "^5.0.2",
+    "ghost": "^5.1.0",
     "ghost-storage-adapter-s3": "^2.8.0",
     "ghost-storage-cloudinary": "^2.2.1",
     "lyra": "github:TryGhost/lyra#main",
