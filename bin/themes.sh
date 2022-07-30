@@ -1,6 +1,10 @@
 themes=(
 	casper
 	lyra
+	headline
+	edition
+	alto
+	ruby
 )
 
 for theme in "${themes[@]}"
