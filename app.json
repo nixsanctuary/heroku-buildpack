@@ -3,6 +3,7 @@
   "description": "Deploy latest Ghost v5 on Heroku",
   "logo": "https://ghost.org/favicon.ico",
   "repository": "https://github.com/thelovekesh/ghost-v4-on-heroku",
+  "stack": "heroku-22",
   "scripts": {
     "postdeploy": "bin/init-deployment"
   },
